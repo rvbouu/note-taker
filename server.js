@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const {writeFile} = require('fs');
-const db = require('./db/db.json');
+let db = require('./db/db.json');
 const uniqid = require('uniqid');
 
 const PORT = 3001;
@@ -27,10 +27,17 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
   req.body.id = uniqid();
-  console.log(req.body);
   db.push(req.body);
   writeFile('./db/db.json', JSON.stringify(db), (err) => {
-    err ? console.log(err) : console.log('all good')
+    err ? console.log(err) : console.log('Note added.')
+  })
+  res.json(db)
+})
+
+app.delete('/api/notes/:id', (req, res) => {
+  db = db.filter(({id}) => id !== req.params.id);
+  writeFile('./db/db.json', JSON.stringify(db), (err) => {
+    err ? console.log(err) : console.log('Note added.')
   })
   res.json(db)
 })
