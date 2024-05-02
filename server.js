@@ -4,7 +4,7 @@ const {writeFile} = require('fs');
 let db = require('./db/db.json');
 const uniqid = require('uniqid');
 
-const PORT = 3001;
+const port = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.json());
@@ -46,6 +46,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 })
 
-app.listen(PORT, () => {
-  console.log(`Express listening at http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Express listening at http://localhost:${port}`);
 })
