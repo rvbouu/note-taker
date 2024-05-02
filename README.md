@@ -2,7 +2,7 @@
 
 ## Description
 
-This Note Taker application allows users to take, view, and delete notes. It uses Espress.js in the back end, saving and retrieving note data from a JSON file.
+This Note Taker application allows users to take, view, and delete notes. It uses Espress.js in the back end, saving and retrieving note data from a JSON file. This application was deployed using Render and can be viewed [here](https://note-taker-s49p.onrender.com).
 
 ## User Story
 
@@ -91,6 +91,10 @@ N/A
 ## Screenshot
 
 ![gif of application functionality](./images/note-taker.gif)
+
+## Deployed Application through Render
+
+Click [here](https://note-taker-s49p.onrender.com) to view the deployed Render appplication.
 
 ## Questions
 
