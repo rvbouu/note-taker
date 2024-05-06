@@ -48,6 +48,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 * [Screenshot](#screenshot)
 
+* [Deployed Application through Render](#deployed-application-through-render)
+
 * [Questions](#questions)
 
 ## Installation
@@ -94,7 +96,7 @@ N/A
 
 ## Deployed Application through Render
 
-Click [here](https://note-taker-s49p.onrender.com) to view the deployed Render appplication.
+Click [here](https://note-taker-s49p.onrender.com) to view the deployed Render application.
 
 ## Questions
 
